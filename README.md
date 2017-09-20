@@ -9,12 +9,12 @@ You'll need an org that has a Community setup and active. Ideally you should hav
 
 Steps to deploy
 ---------------
-1. Deploy this app to Heroku [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/salesforceidentity/embedded-login-example)
+1. Deploy this app to Heroku [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jmcaudron/embedded-login-example)
 2. Create a CORS entry for your community's domain. [More details here](https://developer.salesforce.com/docs/atlas.en-us.externalidentityImplGuide.meta/externalidentityImplGuide/external_identity_login_step_1.htm)
 3. Create a Connected App
 	* Enable OAuth
 	* Select openid scope
-	* Set Callback to https://HEROKUAPP_URL/_callback.php e.g. https://strong-castle-20163.herokuapp.com/_callback.php
+	* Set Callback to https://HEROKUAPP_URL/_callback.php e.g. https://identityjmc.herokuapp.com/_callback.php
 	* Save
 	* Copy the Consumer Key
 	* You will also want to Manage the Connected App and change the Permitted Users policy from User to Admin Approved. Then you will want to a Profile or Permission Set for the user you want to test.
